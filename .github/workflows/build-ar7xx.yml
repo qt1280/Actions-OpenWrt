@@ -11,15 +11,15 @@ name: Build OpenWrt ar7xx
 on: 
   release:
     types: [published]
-  push:
-    branches: 
-      - master
-    paths:
-      - 'ar7xx.config'
+#  push:
+#    branches: 
+#      - master
+#    paths:
+#      - 'ar7xx.config'
 #  schedule:
 #    - cron: 0 8 * * 5
-#  watch:
-#    types: [started]
+  watch:
+    types: [started]
 
 jobs:
   build:
